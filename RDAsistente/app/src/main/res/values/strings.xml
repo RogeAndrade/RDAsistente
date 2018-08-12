@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RD Asistente</string>
+
+    <!-- Menú -->
+    <string name="menu_finanzas">Finanzas</string>
+    <string name="menu_tareas">Tareas</string>
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_mas">Mas</string>
+    <string name="menu_home">Inicio</string>
+
+    <!-- Login -->
+    <string name="label_inicio_sesion">Iniciar sesión</string>
+    <string name="label_btn_inicia_sesion">Inicia sesión con tu correo</string>
+    <string name="label_login_opciones">Ó también</string>
+    <string name="hint_mail_login">Correo</string>
+    <string name="hint_password_login">Contraseña</string>
+    <string name="label_pregunta_registrar">¿No tienes cuenta?</string>
+    <string name="label_registrar"><u>Regístrate</u></string>
+
+    <!-- registro-->
+    <string name="label_registro">Regístrate</string>
+    <string name="label_btn_registro">Regístrate con tu correo</string>
+    <string name="hint_name_registro">Nombre</string>
+
+    <!-- tags fragment -->
+    <string name="tag_fragment_home">Fragment_Home</string>
+    <string name="tag_fragment_finanzas">Fragment_Finanzas</string>
+    <string name="tag_fragment_tareas">Fragment_Tareas</string>
+    <string name="tag_fragment_agenda">Fragment_Agenda</string>
+</resources>

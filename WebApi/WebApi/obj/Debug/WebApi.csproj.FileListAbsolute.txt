@@ -1,0 +1,261 @@
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\WebApi.dll.config
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\WebApi.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\WebApi.pdb
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csc.exe
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csc.exe.config
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csc.rsp
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csi.exe
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csi.exe.config
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\csi.rsp
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.AppContext.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Console.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Claims.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\vbc.exe
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\vbc.exe.config
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\vbc.rsp
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Antlr3.Runtime.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Helpers.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Http.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Mvc.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Optimization.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Razor.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\WebGrease.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Antlr3.Runtime.pdb
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Helpers.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Mvc.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Optimization.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Razor.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Http.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\es\System.Web.Http.resources.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\obj\Debug\WebApi.dll
+C:\Users\Rogelio Andrade\source\repos\WebApi\WebApi\obj\Debug\WebApi.pdb
+C:\inetpub\wwwroot\WebApi\WebApi\bin\WebApi.dll.config
+C:\inetpub\wwwroot\WebApi\WebApi\bin\WebApi.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\WebApi.pdb
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csc.exe
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csc.exe.config
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csc.rsp
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csi.exe
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csi.exe.config
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\csi.rsp
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.AppContext.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Console.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Diagnostics.Process.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.IO.Compression.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.IO.Pipes.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.AccessControl.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Claims.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Threading.Thread.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.ValueTuple.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Xml.XPath.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\vbc.exe
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\vbc.exe.config
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\vbc.rsp
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe
+C:\inetpub\wwwroot\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Antlr3.Runtime.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Helpers.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Http.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Mvc.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Optimization.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Razor.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\WebGrease.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Antlr3.Runtime.pdb
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Helpers.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Mvc.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Optimization.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Razor.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Http.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\es\System.Net.Http.Formatting.resources.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\es\System.Web.Http.resources.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\es\System.Web.Http.WebHost.resources.dll
+C:\inetpub\wwwroot\WebApi\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+C:\inetpub\wwwroot\WebApi\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\WebApi\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+C:\inetpub\wwwroot\WebApi\WebApi\obj\Debug\WebApi.dll
+C:\inetpub\wwwroot\WebApi\WebApi\obj\Debug\WebApi.pdb
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\WebApi.dll.config
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\WebApi.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\WebApi.pdb
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csc.exe
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csc.exe.config
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csc.rsp
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csi.exe
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csi.exe.config
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\csi.rsp
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.AppContext.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Console.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Claims.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\vbc.exe
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\vbc.exe.config
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\vbc.rsp
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Antlr3.Runtime.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Helpers.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Http.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Mvc.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Optimization.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Razor.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\WebGrease.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Antlr3.Runtime.pdb
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Helpers.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Mvc.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Optimization.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Razor.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Http.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\es\System.Web.Http.resources.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Debug\WebApi.dll
+C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Debug\WebApi.pdb

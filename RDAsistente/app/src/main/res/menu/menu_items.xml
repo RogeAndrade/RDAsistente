@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="true"
+        android:icon="@drawable/home_menu"
+        android:title="@string/menu_home"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_finanzas"
+        android:enabled="true"
+        android:icon="@drawable/finanzas_menu"
+        android:title="@string/menu_finanzas"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_tareas"
+        android:enabled="true"
+        android:icon="@drawable/tareas_menu"
+        android:title="@string/menu_tareas"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_agenda"
+        android:enabled="true"
+        android:icon="@drawable/agenda_menu"
+        android:title="@string/menu_agenda"
+        app:showAsAction="always|withText" />
+    <!--<item
+        android:id="@+id/menu_mas"
+        android:enabled="true"
+        android:icon="@drawable/mas_menu"
+        android:title="@string/menu_mas"
+        app:showAsAction="always|withText" />-->
+</menu>
