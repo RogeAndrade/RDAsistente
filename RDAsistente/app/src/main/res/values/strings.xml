@@ -7,6 +7,9 @@
     <string name="menu_agenda">Agenda</string>
     <string name="menu_mas">Mas</string>
     <string name="menu_home">Inicio</string>
+    <string name="menu_free_time">Tiempo libre</string>
+    <string name="menu_free_accounts">Cuentas</string>
+    <string name="menu_free_food">Alimentación</string>
 
     <!-- Login -->
     <string name="label_inicio_sesion">Iniciar sesión</string>

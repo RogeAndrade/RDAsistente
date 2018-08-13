@@ -6,14 +6,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
 
-import mx.reddam.rdasistente.Models.MovimientosContent;
+import mx.reddam.rdasistente.Models.MovimientosContentModel;
 import mx.reddam.rdasistente.Negocio.Controllers.FinanzasController;
 import mx.reddam.rdasistente.R;
 import mx.reddam.rdasistente.Vista.Adapters.AdapterRecyclerContent;
@@ -36,7 +35,7 @@ public class FragmentFinanzas extends Fragment {
         controller = FinanzasController.getInstance();
         rvFinanzas = view.findViewById(R.id.rv_recycler_finanzas);
         rvFinanzas.setHasFixedSize(true);
-        List<MovimientosContent> model = controller.getContentFinanzas();
+        List<MovimientosContentModel> model = controller.getContentFinanzas();
         adapter = new AdapterRecyclerContent(this.getActivity(), model);
         rvFinanzas.setAdapter(adapter);
         rvFinanzas.setLayoutManager(new LinearLayoutManager(this.getActivity()));

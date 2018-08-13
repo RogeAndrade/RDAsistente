@@ -5,7 +5,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import mx.reddam.rdasistente.Models.MovimientosContent;
+import mx.reddam.rdasistente.Models.MovimientosContentModel;
 
 /**
  * Created by Rogelio Andrade on 10/08/2018.
@@ -29,11 +29,11 @@ public class FinanzasController {
         }
     }
 
-    public List<MovimientosContent> getContentFinanzas(){
+    public List<MovimientosContentModel> getContentFinanzas(){
         try{
-            List<MovimientosContent> movimientos = new ArrayList<>();
+            List<MovimientosContentModel> movimientos = new ArrayList<>();
             for(int i = 0; i< 10; i++){
-                MovimientosContent movimiento = new MovimientosContent();
+                MovimientosContentModel movimiento = new MovimientosContentModel();
                 movimiento.setDescripcion("");
                 movimiento.setId(i);
                 movimiento.setTipo(1);

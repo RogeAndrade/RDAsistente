@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mx.reddam.rdasistente.Models.MovimientosContent;
+import mx.reddam.rdasistente.Models.MovimientosContentModel;
 import mx.reddam.rdasistente.R;
 
 /**
@@ -20,10 +20,10 @@ import mx.reddam.rdasistente.R;
 
 public class AdapterRecyclerContent extends RecyclerView.Adapter<AdapterRecyclerContent.ViewHolder>{
     Context context;
-    List<MovimientosContent> movimientos;
+    List<MovimientosContentModel> movimientos;
 
 
-    public AdapterRecyclerContent(Context context, List<MovimientosContent> movimientos){
+    public AdapterRecyclerContent(Context context, List<MovimientosContentModel> movimientos){
         this.context=context;
         this.movimientos=movimientos;
     }
@@ -38,7 +38,7 @@ public class AdapterRecyclerContent extends RecyclerView.Adapter<AdapterRecycler
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        MovimientosContent model = movimientos.get(position);
+        MovimientosContentModel model = movimientos.get(position);
         if(model!= null){
         }
     }

@@ -29,7 +29,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_add_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_directions_run_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -39,9 +39,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_add_move" />
+                            <entry key="outputName" value="ic_icon_free_time" />
                             <entry key="theme" value="CUSTOM" />
-                            <entry key="themeColor" value="ffffff" />
+                            <entry key="themeColor" value="42e4ff" />
                           </map>
                         </option>
                       </PersistentState>
