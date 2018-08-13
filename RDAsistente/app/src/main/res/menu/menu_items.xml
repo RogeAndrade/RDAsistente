@@ -25,10 +25,10 @@
         android:icon="@drawable/agenda_menu"
         android:title="@string/menu_agenda"
         app:showAsAction="always|withText" />
-    <!--<item
+    <item
         android:id="@+id/menu_mas"
         android:enabled="true"
         android:icon="@drawable/mas_menu"
         android:title="@string/menu_mas"
-        app:showAsAction="always|withText" />-->
+        app:showAsAction="always|withText" />
 </menu>

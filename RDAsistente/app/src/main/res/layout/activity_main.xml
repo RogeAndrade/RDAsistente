@@ -6,16 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Vista.Actividades.MainActivity">
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/white" />
-    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/layout_toolbar_main"/>
     <FrameLayout
         android:id="@+id/fl_navigation_content"
         android:layout_marginBottom="56dp"

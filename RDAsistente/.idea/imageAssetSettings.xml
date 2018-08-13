@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_sentiment_very_dissatisfied_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_settings_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_dead_face" />
+                            <entry key="outputName" value="ic_settings_face" />
                             <entry key="theme" value="CUSTOM" />
-                            <entry key="themeColor" value="3b3b3b" />
+                            <entry key="themeColor" value="ffffff" />
                           </map>
                         </option>
                       </PersistentState>

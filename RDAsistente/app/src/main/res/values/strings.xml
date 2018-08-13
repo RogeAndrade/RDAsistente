@@ -27,4 +27,6 @@
     <string name="tag_fragment_finanzas">Fragment_Finanzas</string>
     <string name="tag_fragment_tareas">Fragment_Tareas</string>
     <string name="tag_fragment_agenda">Fragment_Agenda</string>
+    <string name="tag_fragment_settings">Fragment_Settings</string>
+    <string name="tag_fragment_mas">Fragment_Mas</string>
 </resources>

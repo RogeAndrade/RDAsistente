@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ import mx.reddam.rdasistente.Vista.Adapters.AdapterRecyclerHome;
  * Created by Rogelio Andrade on 08/08/2018.
  */
 
-public class HomeFragment extends Fragment {
+public class FragmentHome extends Fragment {
     RecyclerView rvHome;
     HomeController controller;
     AdapterRecyclerHome adapter;
@@ -38,4 +39,6 @@ public class HomeFragment extends Fragment {
         rvHome.setLayoutManager(new LinearLayoutManager(this.getActivity()));
         return view;
     }
+
+
 }
