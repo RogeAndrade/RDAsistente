@@ -2,6 +2,7 @@ package mx.reddam.rdasistente.Vista.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,6 +26,7 @@ public class FragmentFinanzas extends Fragment {
     RecyclerView rvFinanzas;
     FinanzasController controller;
     AdapterRecyclerContent adapter;
+    FloatingActionButton fabAddMore;
 
     @Nullable
     @Override
@@ -38,6 +40,10 @@ public class FragmentFinanzas extends Fragment {
         adapter = new AdapterRecyclerContent(this.getActivity(), model);
         rvFinanzas.setAdapter(adapter);
         rvFinanzas.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+        fabAddMore = getActivity().findViewById(R.id.fab_add_more);
+        if(fabAddMore!=null){
+            fabAddMore.setVisibility(View.VISIBLE);
+        }
         return view;
     }
 }
