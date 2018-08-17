@@ -24,6 +24,7 @@
     <string name="label_registro">Regístrate</string>
     <string name="label_btn_registro">Regístrate con tu correo</string>
     <string name="hint_name_registro">Nombre</string>
+    <string name="hint_last_name_registro">Apellidos</string>
 
     <!-- tags fragment -->
     <string name="tag_fragment_home">Fragment_Home</string>
@@ -41,4 +42,5 @@
     <string name="text_settings_link_pass"><u>¿Cambiar contraseña?</u></string>
     <string name="text_settings_link_pro"><u>¿Actualizar a pro?</u></string>
     <string name="text_settings_accept_push">¿Deseas recibir notificaciones?</string>
+    <string name="text_settings_buy_me_coffe"><u>Te gusta nuestro trabajo ¿Invitanos un café?</u></string>
 </resources>
