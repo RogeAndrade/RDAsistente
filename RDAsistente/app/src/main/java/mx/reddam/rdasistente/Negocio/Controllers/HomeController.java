@@ -22,7 +22,8 @@ public class HomeController {
         if(instance==null){
             synchronized (lock){
                 if(instance == null){
-                    return new HomeController();
+                    instance = new HomeController();
+                    return instance;
                 }else{
                     return instance;
                 }

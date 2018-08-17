@@ -15,17 +15,12 @@ import mx.reddam.rdasistente.R;
  */
 
 public class FragmentTareas extends Fragment {
-    FloatingActionButton fabAddMore;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_tareas, container, false);
-        fabAddMore = getActivity().findViewById(R.id.fab_add_more);
-        if(fabAddMore!=null){
-            fabAddMore.setVisibility(View.VISIBLE);
-        }
         return view;
     }
 }

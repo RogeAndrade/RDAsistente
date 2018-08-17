@@ -25,7 +25,6 @@ public class FragmentFinanzas extends Fragment {
     RecyclerView rvFinanzas;
     FinanzasController controller;
     AdapterRecyclerContent adapter;
-    FloatingActionButton fabAddMore;
 
     @Nullable
     @Override
@@ -39,10 +38,6 @@ public class FragmentFinanzas extends Fragment {
         adapter = new AdapterRecyclerContent(this.getActivity(), model);
         rvFinanzas.setAdapter(adapter);
         rvFinanzas.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        fabAddMore = getActivity().findViewById(R.id.fab_add_more);
-        if(fabAddMore!=null){
-            fabAddMore.setVisibility(View.VISIBLE);
-        }
         return view;
     }
 }

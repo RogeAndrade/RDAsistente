@@ -9,5 +9,9 @@
         <item name="android:textColorPrimary">@color/colorWhite</item>
         <item name="android:textColorSecondary">@color/colorTextDefault</item>
     </style>
-
+    <style name="btnMainStyle">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>

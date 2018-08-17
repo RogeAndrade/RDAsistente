@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 import mx.reddam.rdasistente.R;
 
 /**
@@ -16,17 +19,15 @@ import mx.reddam.rdasistente.R;
  */
 
 public class FragmentSettings extends Fragment {
-    FloatingActionButton fabAddMore;
+    CircleImageView ivProfile;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.activity_settings, container, false);
-        fabAddMore = getActivity().findViewById(R.id.fab_add_more);
-        if(fabAddMore!=null){
-            fabAddMore.setVisibility(View.INVISIBLE);
-        }
+        ivProfile = view.findViewById(R.id.ivc_image_profile);
+        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(ivProfile);
         return view;
     }
 }

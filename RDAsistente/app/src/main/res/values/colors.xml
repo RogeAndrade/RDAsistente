@@ -6,4 +6,5 @@
     <color name="colorWhite">#FFF</color>
     <color name="colorTextDefault">#777</color>
     <color name="colorTextTitle">#555</color>
+    <color name="colorTextPrimary">#AAA</color>
 </resources>

@@ -29,7 +29,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_directions_run_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Users/Rogelio%20Andrade/Downloads/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_restaurant_menu_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -39,9 +39,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_icon_free_time" />
+                            <entry key="outputName" value="ic_icon_food" />
                             <entry key="theme" value="CUSTOM" />
-                            <entry key="themeColor" value="42e4ff" />
+                            <entry key="themeColor" value="06ffb2" />
                           </map>
                         </option>
                       </PersistentState>

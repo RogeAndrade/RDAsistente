@@ -19,7 +19,8 @@ public class FinanzasController {
         if(instance==null){
             synchronized (lock){
                 if(instance == null){
-                    return new FinanzasController();
+                    instance = new FinanzasController();
+                    return instance;
                 }else{
                     return instance;
                 }

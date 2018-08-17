@@ -6,4 +6,5 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="#434"/>
+    <include layout="@layout/layout_item_fav"/>
 </FrameLayout>

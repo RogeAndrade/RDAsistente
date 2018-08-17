@@ -32,4 +32,13 @@
     <string name="tag_fragment_agenda">Fragment_Agenda</string>
     <string name="tag_fragment_settings">Fragment_Settings</string>
     <string name="tag_fragment_mas">Fragment_Mas</string>
+
+    <!-- settings -->
+    <string name="hint_settings_name">Nombre</string>
+    <string name="hint_settings_mail">Correo</string>
+    <string name="hint_settings_last_name">Apellidos</string>
+    <string name="text_settings_btn_change_data">Guardar datos</string>
+    <string name="text_settings_link_pass"><u>¿Cambiar contraseña?</u></string>
+    <string name="text_settings_link_pro"><u>¿Actualizar a pro?</u></string>
+    <string name="text_settings_accept_push">¿Deseas recibir notificaciones?</string>
 </resources>

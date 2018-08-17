@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import mx.reddam.rdasistente.Helpers.BottomNavigationViewHelper;
+import mx.reddam.rdasistente.Negocio.Controllers.MainController;
 import mx.reddam.rdasistente.R;
 import mx.reddam.rdasistente.Vista.Fragments.FragmentFinanzas;
 import mx.reddam.rdasistente.Vista.Fragments.FragmentAgenda;
@@ -24,6 +25,7 @@ import mx.reddam.rdasistente.Vista.Fragments.FragmentHome;
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener{
     Toolbar toolbar;
     ImageView imageView;
+    MainController controller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        controller = MainController.getInstance();
+        controller.setActivity(this);
 
         loadFragment(new FragmentHome(), getString(R.string.tag_fragment_home), false);
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
