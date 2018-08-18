@@ -172,3 +172,7 @@ C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Releas
 C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Release\WebApi.csproj.CopyComplete
 C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Release\WebApi.dll
 C:\Users\Rogelio Andrade\Documents\RDAsistente Proyecto\WebApi\WebApi\obj\Release\WebApi.pdb
+C:\inetpub\wwwroot\WebApi\WebApi\bin\EntityFramework.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\WebApi\WebApi\bin\EntityFramework.xml
+C:\inetpub\wwwroot\WebApi\WebApi\bin\EntityFramework.SqlServer.xml

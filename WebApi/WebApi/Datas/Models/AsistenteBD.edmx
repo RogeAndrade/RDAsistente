@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="asistenteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_persona">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellidos" Type="varchar" MaxLength="120" />
+          <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="correo" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="url_img" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_persona" Type="int" Nullable="false" />
+          <Property Name="psw" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="usr" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="facebook" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="google" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="mail" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="alter_pass" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="recibe_notificaciones" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__tbl_usuar__id_pe__24927208">
+          <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
+          <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_persona">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_usuario">
+              <PropertyRef Name="id_persona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_register_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellidos" Type="varchar" Mode="In" />
+          <Parameter Name="telefono" Type="varchar" Mode="In" />
+          <Parameter Name="correo" Type="varchar" Mode="In" />
+          <Parameter Name="url_img" Type="varchar" Mode="In" />
+          <Parameter Name="usr" Type="varchar" Mode="In" />
+          <Parameter Name="psw" Type="varchar" Mode="In" />
+          <Parameter Name="facebook" Type="char" Mode="In" />
+          <Parameter Name="google" Type="char" Mode="In" />
+          <Parameter Name="mail" Type="char" Mode="In" />
+          <Parameter Name="ret" Type="int" Mode="InOut" />
+        </Function>
+        <EntityContainer Name="asistenteModelStoreContainer">
+          <EntitySet Name="tbl_persona" EntityType="Self.tbl_persona" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tbl_usuar__id_pe__24927208" Association="Self.FK__tbl_usuar__id_pe__24927208">
+            <End Role="tbl_persona" EntitySet="tbl_persona" />
+            <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="asistenteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_persona">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="apellidos" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="correo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="url_img" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tbl_usuario" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_persona" ToRole="tbl_usuario" />
+        </EntityType>
+        <EntityType Name="tbl_usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_persona" Type="Int32" Nullable="false" />
+          <Property Name="psw" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="facebook" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="google" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="mail" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="alter_pass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recibe_notificaciones" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tbl_persona" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_usuario" ToRole="tbl_persona" />
+        </EntityType>
+        <Association Name="FK__tbl_usuar__id_pe__24927208">
+          <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
+          <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_persona">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_usuario">
+              <PropertyRef Name="id_persona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="asistenteEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_persona" EntityType="Self.tbl_persona" />
+          <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" />
+          <AssociationSet Name="FK__tbl_usuar__id_pe__24927208" Association="Self.FK__tbl_usuar__id_pe__24927208">
+            <End Role="tbl_persona" EntitySet="tbl_persona" />
+            <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+          </AssociationSet>
+          <FunctionImport Name="sp_register_user">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellidos" Mode="In" Type="String" />
+            <Parameter Name="telefono" Mode="In" Type="String" />
+            <Parameter Name="correo" Mode="In" Type="String" />
+            <Parameter Name="url_img" Mode="In" Type="String" />
+            <Parameter Name="usr" Mode="In" Type="String" />
+            <Parameter Name="psw" Mode="In" Type="String" />
+            <Parameter Name="facebook" Mode="In" Type="String" />
+            <Parameter Name="google" Mode="In" Type="String" />
+            <Parameter Name="mail" Mode="In" Type="String" />
+            <Parameter Name="ret" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="asistenteModelStoreContainer" CdmEntityContainer="asistenteEntities">
+          <EntitySetMapping Name="tbl_persona">
+            <EntityTypeMapping TypeName="asistenteModel.tbl_persona">
+              <MappingFragment StoreEntitySet="tbl_persona">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="url_img" ColumnName="url_img" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_usuario">
+            <EntityTypeMapping TypeName="asistenteModel.tbl_usuario">
+              <MappingFragment StoreEntitySet="tbl_usuario">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+                <ScalarProperty Name="psw" ColumnName="psw" />
+                <ScalarProperty Name="usr" ColumnName="usr" />
+                <ScalarProperty Name="facebook" ColumnName="facebook" />
+                <ScalarProperty Name="google" ColumnName="google" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="alter_pass" ColumnName="alter_pass" />
+                <ScalarProperty Name="recibe_notificaciones" ColumnName="recibe_notificaciones" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_register_user" FunctionName="asistenteModel.Store.sp_register_user" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

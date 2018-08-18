@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="asistenteModelStoreContainer" CdmEntityContainer="asistenteEntities">
+    <EntitySetMapping Name="tbl_persona">
+      <EntityTypeMapping TypeName="asistenteModel.tbl_persona">
+        <MappingFragment StoreEntitySet="tbl_persona">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="url_img" ColumnName="url_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuario">
+      <EntityTypeMapping TypeName="asistenteModel.tbl_usuario">
+        <MappingFragment StoreEntitySet="tbl_usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+          <ScalarProperty Name="psw" ColumnName="psw" />
+          <ScalarProperty Name="usr" ColumnName="usr" />
+          <ScalarProperty Name="facebook" ColumnName="facebook" />
+          <ScalarProperty Name="google" ColumnName="google" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="alter_pass" ColumnName="alter_pass" />
+          <ScalarProperty Name="recibe_notificaciones" ColumnName="recibe_notificaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_register_user" FunctionName="asistenteModel.Store.sp_register_user" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="asistenteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidos" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="url_img" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_usuario" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_persona" ToRole="tbl_usuario" />
+  </EntityType>
+  <EntityType Name="tbl_usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_persona" Type="Int32" Nullable="false" />
+    <Property Name="psw" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="facebook" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="google" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mail" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="alter_pass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="recibe_notificaciones" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_persona" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_usuario" ToRole="tbl_persona" />
+  </EntityType>
+  <Association Name="FK__tbl_usuar__id_pe__24927208">
+    <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
+    <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_usuario">
+        <PropertyRef Name="id_persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="asistenteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_persona" EntityType="Self.tbl_persona" />
+    <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" />
+    <AssociationSet Name="FK__tbl_usuar__id_pe__24927208" Association="Self.FK__tbl_usuar__id_pe__24927208">
+      <End Role="tbl_persona" EntitySet="tbl_persona" />
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+    </AssociationSet>
+    <FunctionImport Name="sp_register_user">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellidos" Mode="In" Type="String" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+      <Parameter Name="correo" Mode="In" Type="String" />
+      <Parameter Name="url_img" Mode="In" Type="String" />
+      <Parameter Name="usr" Mode="In" Type="String" />
+      <Parameter Name="psw" Mode="In" Type="String" />
+      <Parameter Name="facebook" Mode="In" Type="String" />
+      <Parameter Name="google" Mode="In" Type="String" />
+      <Parameter Name="mail" Mode="In" Type="String" />
+      <Parameter Name="ret" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
