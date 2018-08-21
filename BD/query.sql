@@ -26,16 +26,53 @@ create table tbl_usuario(
 	foreign key (id_persona) references tbl_persona(id)
 );
 
-exec sp_register_user 'Rogelio', 'Andrade', '4771112781', 'rogeandrade1@gmail.com', null, 'randrade', 'RDAsistenteSYSRandrade_123', 0, 0, 1, 0
+
+declare @data int;
+exec sp_register_user 'Rogelio', 'Andrade', '4771112781', 'rogeandrade1@hotmail.com', '', 'randrade1', 'RDAsistenteSYSRandrade_123', 0, 0, 1,@data output;
+select @data;
 
 select * from tbl_usuario
 
-drop table tbl_usuario
+select * from tbl_persona
+
+delete from tbl_usuario where id = 21
+
+delete from tbl_persona where id = 21
+
+drop procedure sp_register_user
+
+select COUNT(*) from tbl_usuario where usr = 'randrade'
+
+begin transaction addUser;
+
+SELECT * FROM sys.sysprocesses WHERE open_tran = 1
+
+rollback transaction
+
+SELECT @@trancount
+ 
 
 create procedure sp_register_user (@nombre varchar(50), @apellidos varchar(120), @telefono varchar(15), @correo varchar(150), @url_img varchar(255), 
 @usr varchar(40), @psw varchar(20), @facebook char(1), @google char(1), @mail char(1), @ret int output)
 as
-begin transaction
+begin
+save transaction addUser;
+declare @valUser tinyint;
+set @valUser = (select COUNT(*) from tbl_usuario where usr = @usr);
+if(@valUser>0)
+begin
+set @ret = -4;
+rollback transaction addUser;
+return;
+end
+declare @valCorreo tinyint;
+set @valCorreo = (select COUNT(*) from tbl_persona where correo = @usr);
+if(@valCorreo>0)
+begin
+set @ret = -5;
+rollback transaction addUser;
+return;
+end
 declare @countRegisterBef int;
 declare @countRegisterAft int;
 declare @countUserBef int;
@@ -57,7 +94,8 @@ set @countRegisterAft = (select COUNT(*) from tbl_persona);
 if(@countRegisterAft is null)
 begin
 set @ret = -1;
-rollback transaction;
+rollback transaction addUser;
+return;
 end
 else
 begin
@@ -74,30 +112,35 @@ set @idUsuario = (select MAX(id) from tbl_usuario);
 if(@idUsuario>0 and @idUsuario is not null)
 begin
 set @ret = @idUsuario;
-commit transaction;
+commit transaction addUser;
+return;
 end
 else
 begin
 set @ret = -3;
-rollback transaction;
+rollback transaction addUser;
+return;
 end
 end
 else
 begin
 set @ret = -3;
-rollback transaction;
+rollback transaction addUser;
+return;
 end
 end
 else
 begin
 set @ret = -2;
-rollback transaction;
+rollback transaction addUser;
+return;
 end
 end
 else
 begin
-set @ret = 1;
-rollback transaction;
+set @ret = -1;
+rollback transaction addUser;
+return;
 end
 end
-go
+end
