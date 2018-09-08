@@ -8,6 +8,8 @@
         <EntityTypeShape EntityType="asistenteModel.tbl_persona" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="asistenteModel.tbl_usuario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="asistenteModel.FK__tbl_usuar__id_pe__24927208" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="asistenteModel.tbl_bitacora" Width="1.5" PointX="0.75" PointY="4.75" />
+        <AssociationConnector Association="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

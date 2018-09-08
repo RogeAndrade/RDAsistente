@@ -4,7 +4,16 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="asistenteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="asistenteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_bitacora">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="mensaje" Type="text" Nullable="false" />
+          <Property Name="fecha" Type="datetime" Nullable="false" />
+          <Property Name="id_usuario" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="tbl_persona">
           <Key>
             <PropertyRef Name="id" />
@@ -30,6 +39,18 @@
           <Property Name="alter_pass" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="recibe_notificaciones" Type="char" MaxLength="1" Nullable="false" />
         </EntityType>
+        <Association Name="FK__tbl_bitac__id_us__4BAC3F29">
+          <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="1" />
+          <End Role="tbl_bitacora" Type="Self.tbl_bitacora" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_usuario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_bitacora">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__tbl_usuar__id_pe__24927208">
           <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
           <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="*" />
@@ -42,6 +63,11 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_register_bitacora" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="mensaje" Type="text" Mode="In" />
+          <Parameter Name="id_usuario" Type="int" Mode="In" />
+          <Parameter Name="ret" Type="int" Mode="InOut" />
+        </Function>
         <Function Name="sp_register_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="nombre" Type="varchar" Mode="In" />
           <Parameter Name="apellidos" Type="varchar" Mode="In" />
@@ -56,15 +82,19 @@
           <Parameter Name="ret" Type="int" Mode="InOut" />
         </Function>
         <EntityContainer Name="asistenteModelStoreContainer">
+          <EntitySet Name="tbl_bitacora" EntityType="Self.tbl_bitacora" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_persona" EntityType="Self.tbl_persona" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tbl_bitac__id_us__4BAC3F29" Association="Self.FK__tbl_bitac__id_us__4BAC3F29">
+            <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+            <End Role="tbl_bitacora" EntitySet="tbl_bitacora" />
+          </AssociationSet>
           <AssociationSet Name="FK__tbl_usuar__id_pe__24927208" Association="Self.FK__tbl_usuar__id_pe__24927208">
             <End Role="tbl_persona" EntitySet="tbl_persona" />
             <End Role="tbl_usuario" EntitySet="tbl_usuario" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="asistenteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -94,6 +124,7 @@
           <Property Name="alter_pass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="recibe_notificaciones" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tbl_persona" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_usuario" ToRole="tbl_persona" />
+          <NavigationProperty Name="tbl_bitacora" Relationship="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29" FromRole="tbl_usuario" ToRole="tbl_bitacora" />
         </EntityType>
         <Association Name="FK__tbl_usuar__id_pe__24927208">
           <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
@@ -127,7 +158,39 @@
             <Parameter Name="mail" Mode="In" Type="String" />
             <Parameter Name="ret" Mode="InOut" Type="Int32" />
           </FunctionImport>
+          <EntitySet Name="tbl_bitacora" EntityType="asistenteModel.tbl_bitacora" />
+          <AssociationSet Name="FK__tbl_bitac__id_us__4BAC3F29" Association="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29">
+            <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+            <End Role="tbl_bitacora" EntitySet="tbl_bitacora" />
+          </AssociationSet>
+          <FunctionImport Name="sp_register_bitacora">
+            <Parameter Name="mensaje" Mode="In" Type="String" />
+            <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+            <Parameter Name="ret" Mode="InOut" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
+        <EntityType Name="tbl_bitacora">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mensaje" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_usuario" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tbl_usuario" Relationship="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29" FromRole="tbl_bitacora" ToRole="tbl_usuario" />
+        </EntityType>
+        <Association Name="FK__tbl_bitac__id_us__4BAC3F29">
+          <End Type="asistenteModel.tbl_usuario" Role="tbl_usuario" Multiplicity="1" />
+          <End Type="asistenteModel.tbl_bitacora" Role="tbl_bitacora" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_usuario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_bitacora">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -162,6 +225,17 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="sp_register_user" FunctionName="asistenteModel.Store.sp_register_user" />
+          <EntitySetMapping Name="tbl_bitacora">
+            <EntityTypeMapping TypeName="asistenteModel.tbl_bitacora">
+              <MappingFragment StoreEntitySet="tbl_bitacora">
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_register_bitacora" FunctionName="asistenteModel.Store.sp_register_bitacora" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

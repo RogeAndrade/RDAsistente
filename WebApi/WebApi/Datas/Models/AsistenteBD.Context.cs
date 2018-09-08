@@ -29,6 +29,7 @@ namespace WebApi.Datas.Models
     
         public virtual DbSet<tbl_persona> tbl_persona { get; set; }
         public virtual DbSet<tbl_usuario> tbl_usuario { get; set; }
+        public virtual DbSet<tbl_bitacora> tbl_bitacora { get; set; }
     
         public virtual int sp_register_user(string nombre, string apellidos, string telefono, string correo, string url_img, string usr, string psw, string facebook, string google, string mail, ObjectParameter ret)
         {
@@ -73,6 +74,19 @@ namespace WebApi.Datas.Models
                 new ObjectParameter("mail", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_register_user", nombreParameter, apellidosParameter, telefonoParameter, correoParameter, url_imgParameter, usrParameter, pswParameter, facebookParameter, googleParameter, mailParameter, ret);
+        }
+    
+        public virtual int sp_register_bitacora(string mensaje, Nullable<int> id_usuario, ObjectParameter ret)
+        {
+            var mensajeParameter = mensaje != null ?
+                new ObjectParameter("mensaje", mensaje) :
+                new ObjectParameter("mensaje", typeof(string));
+    
+            var id_usuarioParameter = id_usuario.HasValue ?
+                new ObjectParameter("id_usuario", id_usuario) :
+                new ObjectParameter("id_usuario", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_register_bitacora", mensajeParameter, id_usuarioParameter, ret);
         }
     }
 }

@@ -29,5 +29,16 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="sp_register_user" FunctionName="asistenteModel.Store.sp_register_user" />
+    <EntitySetMapping Name="tbl_bitacora">
+      <EntityTypeMapping TypeName="asistenteModel.tbl_bitacora">
+        <MappingFragment StoreEntitySet="tbl_bitacora">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_register_bitacora" FunctionName="asistenteModel.Store.sp_register_bitacora" />
   </EntityContainerMapping>
 </Mapping>

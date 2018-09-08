@@ -26,6 +26,7 @@
     <Property Name="alter_pass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="recibe_notificaciones" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tbl_persona" Relationship="Self.FK__tbl_usuar__id_pe__24927208" FromRole="tbl_usuario" ToRole="tbl_persona" />
+    <NavigationProperty Name="tbl_bitacora" Relationship="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29" FromRole="tbl_usuario" ToRole="tbl_bitacora" />
   </EntityType>
   <Association Name="FK__tbl_usuar__id_pe__24927208">
     <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
@@ -59,5 +60,37 @@
       <Parameter Name="mail" Mode="In" Type="String" />
       <Parameter Name="ret" Mode="InOut" Type="Int32" />
     </FunctionImport>
+    <EntitySet Name="tbl_bitacora" EntityType="asistenteModel.tbl_bitacora" />
+    <AssociationSet Name="FK__tbl_bitac__id_us__4BAC3F29" Association="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29">
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+      <End Role="tbl_bitacora" EntitySet="tbl_bitacora" />
+    </AssociationSet>
+    <FunctionImport Name="sp_register_bitacora">
+      <Parameter Name="mensaje" Mode="In" Type="String" />
+      <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+      <Parameter Name="ret" Mode="InOut" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
+  <EntityType Name="tbl_bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mensaje" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_usuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_usuario" Relationship="asistenteModel.FK__tbl_bitac__id_us__4BAC3F29" FromRole="tbl_bitacora" ToRole="tbl_usuario" />
+  </EntityType>
+  <Association Name="FK__tbl_bitac__id_us__4BAC3F29">
+    <End Type="asistenteModel.tbl_usuario" Role="tbl_usuario" Multiplicity="1" />
+    <End Type="asistenteModel.tbl_bitacora" Role="tbl_bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_bitacora">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

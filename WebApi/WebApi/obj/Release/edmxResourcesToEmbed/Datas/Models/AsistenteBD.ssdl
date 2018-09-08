@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="asistenteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mensaje" Type="text" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="tbl_persona">
     <Key>
       <PropertyRef Name="id" />
@@ -25,6 +34,18 @@
     <Property Name="alter_pass" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="recibe_notificaciones" Type="char" MaxLength="1" Nullable="false" />
   </EntityType>
+  <Association Name="FK__tbl_bitac__id_us__4BAC3F29">
+    <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="1" />
+    <End Role="tbl_bitacora" Type="Self.tbl_bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_bitacora">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__tbl_usuar__id_pe__24927208">
     <End Role="tbl_persona" Type="Self.tbl_persona" Multiplicity="1" />
     <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="*" />
@@ -37,6 +58,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="sp_register_bitacora" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mensaje" Type="text" Mode="In" />
+    <Parameter Name="id_usuario" Type="int" Mode="In" />
+    <Parameter Name="ret" Type="int" Mode="InOut" />
+  </Function>
   <Function Name="sp_register_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="nombre" Type="varchar" Mode="In" />
     <Parameter Name="apellidos" Type="varchar" Mode="In" />
@@ -51,8 +77,13 @@
     <Parameter Name="ret" Type="int" Mode="InOut" />
   </Function>
   <EntityContainer Name="asistenteModelStoreContainer">
+    <EntitySet Name="tbl_bitacora" EntityType="Self.tbl_bitacora" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_persona" EntityType="Self.tbl_persona" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tbl_bitac__id_us__4BAC3F29" Association="Self.FK__tbl_bitac__id_us__4BAC3F29">
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+      <End Role="tbl_bitacora" EntitySet="tbl_bitacora" />
+    </AssociationSet>
     <AssociationSet Name="FK__tbl_usuar__id_pe__24927208" Association="Self.FK__tbl_usuar__id_pe__24927208">
       <End Role="tbl_persona" EntitySet="tbl_persona" />
       <End Role="tbl_usuario" EntitySet="tbl_usuario" />

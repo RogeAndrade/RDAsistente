@@ -14,7 +14,7 @@ namespace WebApi.Controllers
         ConexionUser conexion;
         public SignUserResponseModel Put(DatasUserModelRequest DatosUsuario) {
             SignUserResponseModel ModelRet = new SignUserResponseModel();
-            conexion = ConexionUser.Instance;
+            conexion = ConexionUser.GetInstance();
             try
             {
                 return conexion.RegistrarUsuario(DatosUsuario.Nombre, DatosUsuario.Apellidos, DatosUsuario.Telefono, DatosUsuario.Correo, DatosUsuario.Url, DatosUsuario.Usr, DatosUsuario.Pass, DatosUsuario.Facebook, DatosUsuario.Google, DatosUsuario.Mail);

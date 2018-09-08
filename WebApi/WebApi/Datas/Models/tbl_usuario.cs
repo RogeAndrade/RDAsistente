@@ -14,6 +14,12 @@ namespace WebApi.Datas.Models
     
     public partial class tbl_usuario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tbl_usuario()
+        {
+            this.tbl_bitacora = new HashSet<tbl_bitacora>();
+        }
+    
         public int id { get; set; }
         public int id_persona { get; set; }
         public string psw { get; set; }
@@ -25,5 +31,7 @@ namespace WebApi.Datas.Models
         public string recibe_notificaciones { get; set; }
     
         public virtual tbl_persona tbl_persona { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tbl_bitacora> tbl_bitacora { get; set; }
     }
 }
