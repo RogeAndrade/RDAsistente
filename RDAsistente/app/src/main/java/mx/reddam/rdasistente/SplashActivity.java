@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import io.realm.Realm;
 import mx.reddam.rdasistente.Vista.Actividades.LoginActivity;
 
 /**
@@ -21,6 +22,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        Realm.init(getApplicationContext());
 
         TimerTask task = new TimerTask() {
             @Override

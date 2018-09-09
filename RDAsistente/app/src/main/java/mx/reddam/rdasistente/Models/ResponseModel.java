@@ -1,5 +1,7 @@
 package mx.reddam.rdasistente.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 import mx.reddam.rdasistente.Enums.EnumTipoRespuesta;
 
 /**
@@ -7,7 +9,11 @@ import mx.reddam.rdasistente.Enums.EnumTipoRespuesta;
  */
 
 public class ResponseModel {
+
+    @SerializedName("Mensaje")
     String mensaje;
+
+    @SerializedName("CodigoRespuesta")
     EnumTipoRespuesta codigoRespuesta;
 
     public String getMensaje() {

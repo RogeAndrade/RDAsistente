@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">RD Asistente</string>
 
+    <!-- Main -->
+    <string name="acceptar">Aceptar</string>
+    <string name="no_empty_data">No puede haber datos vacios</string>
+    <string name="ok_alert">¡Bien hecho!</string>
+
     <!-- Menú -->
     <string name="menu_finanzas">Finanzas</string>
     <string name="menu_tareas">Tareas</string>
@@ -17,6 +22,7 @@
     <string name="label_login_opciones">Ó también</string>
     <string name="hint_mail_login">Correo</string>
     <string name="hint_password_login">Contraseña</string>
+    <string name="hint_usr_login">Usuario</string>
     <string name="label_pregunta_registrar">¿No tienes cuenta?</string>
     <string name="label_registrar"><u>Regístrate</u></string>
 
@@ -25,6 +31,7 @@
     <string name="label_btn_registro">Regístrate con tu correo</string>
     <string name="hint_name_registro">Nombre</string>
     <string name="hint_last_name_registro">Apellidos</string>
+    <string name="text_correct_sign_main">Te has registrado correctamente, te llegará un correo, activa tu cuenta e inicia sesión</string>
 
     <!-- tags fragment -->
     <string name="tag_fragment_home">Fragment_Home</string>

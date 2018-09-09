@@ -1,11 +1,17 @@
 package mx.reddam.rdasistente.Enums;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Rogelio Andrade on 08/08/2018.
  */
 
 public enum EnumTipoRespuesta {
-    Correcto("Correcto", 1), Error("Error", 2),
+    @SerializedName("1")
+    Correcto("Correcto", 1),
+    @SerializedName("2")
+    Error("Error", 2),
+    @SerializedName("3")
     Excepcion("Excepcion", 3);
 
     private String nameTypeResponse;
